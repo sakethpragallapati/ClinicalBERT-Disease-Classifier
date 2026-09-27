@@ -1,0 +1,25 @@
+# Python environment and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+.venv/
+
+# Hugging Face Trainer checkpoints & Model binaries
+results/
+clinical_bert_disease_classifier/
+runs/
+*.safetensors
+*.bin
+*.pt
+*.h5
+
+# Datasets (Often too large for GitHub)
+datasets/
+*.csv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
