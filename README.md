@@ -140,13 +140,13 @@ We conducted a hyperparameter test using an ROC (Receiver Operating Characterist
 ### 1. Confidence Distribution
 First, we analyzed the probability density of the model's confidence when fed 200 real medical symptoms (Blue) versus 200 vague or random strings of text (Red).
 
-![Confidence Distribution](confidence_distribution.png)
+![Confidence Distribution](assets/confidence_distribution.png)
 *As seen above, the model is highly confident (near 1.0) when classifying real symptoms, but its confidence drops significantly when forced to classify random, vague text.*
 
 ### 2. Optimal Threshold via ROC Curve
 To find the exact mathematical threshold that best separates the two distributions, we plotted the ROC curve and maximized Youden's J statistic (the point on the curve furthest from the random-guess diagonal).
 
-![ROC Curve](roc_curve.png)
+![ROC Curve](assets/roc_curve.png)
 
 **Results:**
 - The mathematically optimal confidence threshold is **75.09%**.
